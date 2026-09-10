@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -23,33 +23,55 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Check site chunks
-        id: chunks
+      - name: Determine site source
+        id: source
         run: |
-          count=$(find . -maxdepth 1 -name 'portfolio-site-*.zip' | wc -l)
-          if [ "$count" -lt 3 ]; then
-            echo "ready=false" >> "$GITHUB_OUTPUT"
-            echo "Waiting for all 3 site chunks."
-          else
+          if [ -f index.html ]; then
             echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "source_mode=true" >> "$GITHUB_OUTPUT"
+          else
+            count=$(find . -maxdepth 1 -name 'portfolio-site-*.zip' | wc -l)
+            if [ "$count" -lt 3 ]; then
+              echo "ready=false" >> "$GITHUB_OUTPUT"
+              echo "source_mode=false" >> "$GITHUB_OUTPUT"
+              echo "Waiting for all 3 site chunks."
+            else
+              echo "ready=true" >> "$GITHUB_OUTPUT"
+              echo "source_mode=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
       - name: Configure Pages
-        if: steps.chunks.outputs.ready == 'true'
+        if: steps.source.outputs.ready == 'true'
         uses: actions/configure-pages@v5
         with:
           enablement: true
-      - name: Unpack site
-        if: steps.chunks.outputs.ready == 'true'
+      - name: Prepare site
+        if: steps.source.outputs.ready == 'true'
         run: |
-          rm -rf site
-          mkdir -p site
-          for part in portfolio-site-*.zip; do unzip -qo "$part" -d site; done
+          rm -rf build
+          mkdir -p build
+          if [ "${{ steps.source.outputs.source_mode }}" = "true" ]; then
+            cp -R index.html styles.css app.js .nojekyll assets detail-assets build/
+          else
+            for part in portfolio-site-*.zip; do unzip -qo "$part" -d build; done
+          fi
       - name: Upload static site
-        if: steps.chunks.outputs.ready == 'true'
+        if: steps.source.outputs.ready == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: build
       - name: Deploy to GitHub Pages
-        if: steps.chunks.outputs.ready == 'true'
+        if: steps.source.outputs.ready == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Expand source archive
+        if: steps.source.outputs.ready == 'true' && steps.source.outputs.source_mode == 'false'
+        run: |
+          for part in portfolio-site-*.zip; do unzip -qo "$part" -d .; done
+          git rm -q portfolio-site-*.zip
+          git add index.html styles.css app.js .nojekyll assets detail-assets
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Store expanded portfolio sources [skip ci]"
+          git push
