@@ -43,7 +43,7 @@ jobs:
         run: |
           rm -rf site
           mkdir -p site
-          for part in portfolio-site-*.zip; do unzip -q "$part" -d site; done
+          for part in portfolio-site-*.zip; do unzip -qo "$part" -d site; done
       - name: Upload static site
         if: steps.chunks.outputs.ready == 'true'
         uses: actions/upload-pages-artifact@v3
