@@ -23,19 +23,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Check site chunks
+        id: chunks
+        run: |
+          count=$(find . -maxdepth 1 -name 'portfolio-site-*.zip' | wc -l)
+          if [ "$count" -lt 3 ]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Waiting for all 3 site chunks."
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Configure Pages
+        if: steps.chunks.outputs.ready == 'true'
         uses: actions/configure-pages@v5
         with:
           enablement: true
       - name: Unpack site
+        if: steps.chunks.outputs.ready == 'true'
         run: |
           rm -rf site
           mkdir -p site
-          unzip -q portfolio-site.zip -d site
+          for part in portfolio-site-*.zip; do unzip -q "$part" -d site; done
       - name: Upload static site
+        if: steps.chunks.outputs.ready == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
       - name: Deploy to GitHub Pages
+        if: steps.chunks.outputs.ready == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
