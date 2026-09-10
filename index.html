@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1efe8">
+  <meta name="description" content="Ziqi Li — Product designer focused on intelligent products, human-centered experiences and visual storytelling.">
+  <title>Ziqi Li — Product Designer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2311110f'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial Narrow,Arial' font-size='42' font-weight='700' fill='%23f1efe8'%3EZ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#works">跳至作品</a>
+
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="page-loader__mark">ZL</div>
+    <div class="page-loader__line"><span></span></div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__label">MOVE</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ziqi Li, back to top">
+      <span class="brand__mark">ZL</span>
+      <span class="brand__name">Ziqi Li</span>
+    </a>
+    <div class="header-center" aria-hidden="true">
+      <span>PORTFOLIO / 2026</span>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#reel">REEL</a>
+      <a href="#works">WORKS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#resume">RESUME</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="local-time">
+      <span>LOCAL</span>
+      <time id="localTime">--:--:--</time>
+    </div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+      <span>MENU</span>
+      <i></i><i></i>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#reel"><span>00</span>REEL</a>
+    <a href="#works"><span>01?05</span>WORKS</a>
+    <a href="#about"><span>06</span>ABOUT</a>
+    <a href="#resume"><span>03</span>RESUME</a>
+    <a href="#contact"><span>04</span>CONTACT</a>
+    <p>INTELLIGENT PRODUCT / UX / VISUAL</p>
+  </div>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="heroName">
+      <div class="hero__noise" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="pointer-stage" id="pointerStage" aria-hidden="true"></div>
+
+      <div class="hero__eyebrow reveal-load">
+        <span class="dot"></span>
+        <span>PRODUCT DESIGNER · UX / INDUSTRIAL / VISUAL</span>
+      </div>
+
+      <div class="hero__copy reveal-load">
+        <div class="hero__identity">
+          <strong>李子琪</strong>
+          <span>重庆邮电大学 · 2024级产品设计</span>
+        </div>
+        <p>智能产品设计背景，关注人、技术与真实使用场景。擅长从调研与系统梳理出发，把复杂问题转化为清晰、有温度且可落地的产品体验。</p>
+      </div>
+
+      <div class="hero__coordinates" aria-hidden="true">
+        <span>31.2304° N</span>
+        <span>121.4737° E</span>
+      </div>
+
+      <h1 class="hero__name" id="heroName">
+        <span class="hero__name-line hero__name-line--first"><span>Ziqi</span></span>
+        <span class="hero__name-line hero__name-line--last"><span>Li</span><b>.</b></span>
+      </h1>
+
+      <div class="hero__bottom reveal-load">
+        <div class="hero__scroll">
+          <span class="scroll-line"><i></i></span>
+          <span>SCROLL TO EXPLORE</span>
+        </div>
+        <div class="hero__index">
+          <span>00</span>
+          <i></i>
+          <span>05</span>
+        </div>
+      </div>
+
+      <div class="pointer-hint reveal-load" id="pointerHint">
+        <span class="pointer-hint__ring"></span>
+        <span>MOVE YOUR CURSOR</span>
+      </div>
+    </section>
+
+<section class="showreel" id="reel" aria-labelledby="reelTitle">
+      <div class="showreel__sticky">
+        <div class="showreel__frame" id="reelFrame">
+          <video class="showreel__video" id="showreelVideo" src="assets/showreel-mix-30s.mp4" poster="assets/showreel-mix-poster.jpg" muted playsinline loop preload="metadata" aria-label="Ziqi Li motion showreel"></video>
+          <div class="showreel__scrim"></div>
+          <div class="showreel__topline">
+            <span>[ 00 / SIX FILMS ]</span>
+            <span>2026 / 30 SEC</span>
+          </div>
+          <h2 class="showreel__title" id="reelTitle">SHOW <em>REEL</em></h2>
+          <div class="showreel__controls">
+            <button class="reel-toggle" id="reelToggle" type="button"><i>Ⅱ</i><span>SCROLL TO PLAY</span></button>
+            <span class="reel-time" id="reelTime">00:00 / 00:30</span>
+          </div>
+          <div class="reel-progress"><span id="reelProgress"></span></div>
+        </div>
+        <div class="showreel__footer">
+          <span>A 30 SECOND CUT / AUTOMOTIVE · CULTURE · SERVICE</span>
+          <span>KEEP SCROLLING ↓</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works" aria-labelledby="worksTitle">
+      <div class="section-kicker" data-reveal>
+        <span>[ 01—05 / SELECTED WORKS ]</span>
+        <span>0—5</span>
+      </div>
+      <div class="works__heading" data-reveal>
+        <h2 id="worksTitle">Selected<br><em>works</em></h2>
+        <p>按照作品目录顺序展开：从文化可视化、智能座舱与移动体验，到交互产品和六组产品设计展板。</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-entry" id="work-1" data-reveal>
+          <button class="project-entry__visual" type="button" data-project="yi" aria-label="查看彝族非遗文化可视化项目">
+            <img src="assets/project-yi.webp" alt="彝族非遗文化基因活化图鉴设计" loading="lazy">
+            <span class="project-entry__stamp">01</span>
+            <span class="project-entry__view">VIEW CASE ↗</span>
+          </button>
+          <div class="project-entry__copy">
+            <div class="project-entry__meta"><span>01 / 05</span><span>VISUAL / CULTURE</span></div>
+            <h3>Yi Chronicle</h3>
+            <p class="project-entry__zh">焰绣银章：彝族非遗文化基因活化图鉴</p>
+            <p class="project-entry__desc">以彝族纹样、工艺与仪式知识为研究对象，把复杂文化信息转译为可浏览、可比较、可延展的视觉图谱。</p>
+            <button class="project-entry__button" type="button" data-project="yi">OPEN CASE STUDY <i>↗</i></button>
+          </div>
+        </article>
+
+        <article class="project-entry" id="work-2" data-reveal>
+          <button class="project-entry__visual" type="button" data-project="byd" aria-label="查看比亚迪智能座舱 HMI 项目">
+            <img src="assets/project-byd.webp" alt="比亚迪智能座舱 HMI 界面设计" loading="lazy">
+            <span class="project-entry__stamp">02</span>
+            <span class="project-entry__view">VIEW CASE ↗</span>
+          </button>
+          <div class="project-entry__copy">
+            <div class="project-entry__meta"><span>02 / 05</span><span>HMI / UX / UI</span></div>
+            <h3>Intelligent Cockpit</h3>
+            <p class="project-entry__zh">比亚迪智能座舱 HMI 体验设计</p>
+            <p class="project-entry__desc">围绕驾驶场景重构导航、中控与状态信息，在高信息密度下保持可读性、操作节奏与统一视觉语言。</p>
+            <button class="project-entry__button" type="button" data-project="byd">OPEN CASE STUDY <i>↗</i></button>
+          </div>
+        </article>
+
+        <article class="project-entry" id="work-3" data-reveal>
+          <button class="project-entry__visual" type="button" data-project="mediflow" aria-label="查看预约挂号 App 用户体验项目">
+            <img src="assets/project-mediflow.webp" alt="预约挂号 App 用户体验设计" loading="lazy">
+            <span class="project-entry__stamp">03</span>
+            <span class="project-entry__view">VIEW CASE ↗</span>
+          </button>
+          <div class="project-entry__copy">
+            <div class="project-entry__meta"><span>03 / 05</span><span>SERVICE / MOBILE UX</span></div>
+            <h3>MediFlow</h3>
+            <p class="project-entry__zh">预约挂号 App 用户体验设计</p>
+            <p class="project-entry__desc">以首次使用者和高频就医用户为核心，梳理从科室选择、医生预约到就诊提醒的完整服务流程。</p>
+            <button class="project-entry__button" type="button" data-project="mediflow">OPEN CASE STUDY <i>↗</i></button>
+          </div>
+        </article>
+
+        <article class="project-entry" id="work-4" data-reveal>
+          <button class="project-entry__visual" type="button" data-project="poluo" aria-label="查看坡见龙门交互产品项目">
+            <img src="assets/project-poluo.webp" alt="坡见龙门交互产品设计预览" loading="lazy">
+            <span class="project-entry__stamp">04</span>
+            <span class="project-entry__view">PLAY DEMO ↗</span>
+          </button>
+          <div class="project-entry__copy">
+            <div class="project-entry__meta"><span>04 / 05</span><span>INTERACTION / EXPERIENCE</span></div>
+            <h3>坡见龙门</h3>
+            <p class="project-entry__zh">文化交互产品与可操作原型设计</p>
+            <p class="project-entry__desc">将文化内容、空间叙事与可交互原型结合，通过屏幕、声音和动作反馈建立一条更完整的体验路径。</p>
+            <button class="project-entry__button" type="button" data-project="poluo">PLAY PROJECT FILM <i>↗</i></button>
+          </div>
+        </article>
+
+        <article class="project-entry project-entry--five" id="work-5" data-reveal>
+          <button class="project-entry__visual" type="button" data-project="five" aria-label="查看产品设计展板合集">
+            <img src="assets/project-five.webp" alt="产品设计展板 a 到 f 六组项目总览" loading="lazy">
+            <span class="project-entry__stamp">05</span>
+            <span class="project-entry__view">VIEW ALL BOARDS ↗</span>
+          </button>
+          <div class="project-entry__copy">
+            <div class="project-entry__meta"><span>05 / 05</span><span>PRODUCT DESIGN / A—F</span></div>
+            <h3>Product Boards</h3>
+            <p class="project-entry__zh">智能产品设计展板合集</p>
+            <p class="project-entry__desc">六组产品方向，覆盖海洋工程、生态环境、文化遗产、应急救援、农业机器人与适老设计。</p>
+            <div class="board-index" aria-label="产品设计展板 a 到 f">
+              <button type="button" data-project="hull"><span>A</span><img src="assets/project-hull.webp" alt=""><strong>Hull Lab</strong></button>
+              <button type="button" data-project="pure"><span>B</span><img src="assets/project-pure.webp" alt=""><strong>Pure River</strong></button>
+              <button type="button" data-project="heritage"><span>C</span><img src="assets/project-heritage.webp" alt=""><strong>Heritage</strong></button>
+              <button type="button" data-project="mine"><span>D</span><img src="assets/project-mine.webp" alt=""><strong>Deep Rescue</strong></button>
+              <button type="button" data-project="agri"><span>E</span><img src="assets/project-agri.webp" alt=""><strong>Agri Expert</strong></button>
+              <button type="button" data-project="care"><span>F</span><img src="assets/project-care.webp" alt=""><strong>Care Assist</strong></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<section class="statement" id="about">
+      <div class="section-kicker" data-reveal>
+        <span>[ 06 / APPROACH ]</span>
+        <span>06</span>
+      </div>
+      <div class="statement__layout">
+        <div class="statement__label" data-reveal>
+          <p>I connect human needs, emerging technology and visual storytelling.</p>
+          <span class="micro-copy">BRIDGING PRODUCT THINKING AND EXPERIENCE DESIGN</span>
+        </div>
+        <h2 class="statement__headline" data-reveal>
+          Useful by logic.<br>
+          <em>Desirable</em> by design.
+        </h2>
+        <div class="statement__aside" data-reveal>
+          <p>从智能硬件、数字界面到文化信息可视化，我持续探索“功能”与“感受”之间的平衡，让产品不仅解决问题，也建立清晰的品牌记忆。</p>
+          <a class="text-link" href="#resume"><span>SEE CAPABILITIES</span><i>↘</i></a>
+        </div>
+      </div>
+      <div class="ticker" aria-label="Design disciplines">
+        <div class="ticker__track">
+          <span>PRODUCT DESIGN</span><i>✳</i>
+          <span>UX / UI</span><i>✳</i>
+          <span>SYSTEM THINKING</span><i>✳</i>
+          <span>VISUAL STORYTELLING</span><i>✳</i>
+          <span>MOTION PROTOTYPING</span><i>✳</i>
+          <span>PRODUCT DESIGN</span><i>✳</i>
+          <span>UX / UI</span><i>✳</i>
+          <span>SYSTEM THINKING</span><i>✳</i>
+          <span>VISUAL STORYTELLING</span><i>✳</i>
+          <span>MOTION PROTOTYPING</span><i>✳</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume" id="resume" aria-labelledby="resumeTitle">
+      <div class="resume__glow" aria-hidden="true"></div>
+      <div class="section-kicker section-kicker--light" data-reveal>
+        <span>[ 07 / PROFILE ]</span>
+        <span>07</span>
+      </div>
+      <div class="resume__heading" data-reveal>
+        <h2 id="resumeTitle">Learning<br><em>by doing.</em></h2>
+        <p>一份简明版学习与实践预览。正式简历内容可在下一轮替换为你的学校、经历、奖项与联系方式。</p>
+      </div>
+
+      <div class="resume__body">
+        <div class="resume-card" data-reveal>
+          <div class="resume-card__top">
+            <span>ZI / PROFILE 2026</span>
+            <span>01—03</span>
+          </div>
+          <div class="timeline">
+            <article>
+              <span>2023—NOW</span>
+              <div><strong>Intelligent Product Design</strong><p>产品设计基础 · 形态与结构 · 用户研究</p></div>
+            </article>
+            <article>
+              <span>2025</span>
+              <div><strong>Smart Hardware & Systems</strong><p>智能装备 · 系统思维 · 场景化落地</p></div>
+            </article>
+            <article>
+              <span>2026</span>
+              <div><strong>UX, Motion & Information Design</strong><p>交互体验 · 动效原型 · 信息可视化</p></div>
+            </article>
+          </div>
+          <div class="resume-card__footer">
+            <span>AVAILABLE FOR INTERNSHIP / JUNIOR ROLE</span>
+            <span>CN / EN</span>
+          </div>
+        </div>
+
+        <div class="capabilities" data-reveal>
+          <p class="micro-copy">WHAT I BRING TO A TEAM</p>
+          <ol>
+            <li><span>01</span><strong>Product Strategy</strong><p>从调研、定义到概念收敛，让问题更清晰。</p></li>
+            <li><span>02</span><strong>Industrial Design</strong><p>从系统结构到造型细节，兼顾功能与审美。</p></li>
+            <li><span>03</span><strong>UX & UI</strong><p>从行为路径到界面语言，建立顺畅体验。</p></li>
+            <li><span>04</span><strong>Visual & Motion</strong><p>从品牌表达到动态叙事，提升记忆点。</p></li>
+          </ol>
+          <div class="capability-tags">
+            <span>RESEARCH</span><span>SKETCH</span><span>3D</span><span>FIGMA</span><span>MOTION</span><span>VISUALIZATION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="section-kicker" data-reveal>
+        <span>[ 08 / CONTACT ]</span>
+        <span>08</span>
+      </div>
+      <div class="contact__eyebrow" data-reveal>HAVE A PROJECT, ROLE OR IDEA?</div>
+      <h2 class="contact__title" id="contactTitle" data-reveal>
+        <span>Let’s</span>
+        <em>talk.</em>
+      </h2>
+      <a class="contact__mail" href="mailto:2681073207@qq.com" data-reveal>
+        <span>2681073207@qq.com</span>
+        <i>↗</i>
+      </a>
+      <footer class="footer">
+        <div><span>© 2026 ZIQI LI</span><span>PORTFOLIO PREVIEW</span></div>
+        <div><a href="#top">BACK TO TOP ↑</a><span>DESIGNED WITH INTENTION</span></div>
+      </footer>
+    </section>
+  </main>
+
+  <dialog class="project-dialog" id="projectDialog">
+    <div class="project-dialog__shell">
+      <button class="dialog-close" type="button" aria-label="关闭项目预览">CLOSE <i>×</i></button>
+      <div class="project-dialog__head">
+        <span id="dialogTag">PROJECT</span>
+        <span id="dialogIndex">01 / 10</span>
+      </div>
+      <div class="project-dialog__content">
+        <div class="project-dialog__copy">
+          <h2 id="dialogTitle">Project title</h2>
+          <p class="project-dialog__zh" id="dialogZh"></p>
+          <p id="dialogDescription"></p>
+          <div class="project-dialog__meta">
+            <span>ROLE</span><strong>Product / UX / Visual</strong>
+            <span>TYPE</span><strong id="dialogType">Case study</strong>
+          </div>
+        </div>
+        <div class="project-dialog__gallery" id="dialogGallery"></div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
