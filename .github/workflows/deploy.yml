@@ -61,7 +61,8 @@ jobs:
           rm -rf build
           mkdir -p build
           if [ "${{ steps.source.outputs.source_mode }}" = "true" ]; then
-            cp -R index.html styles.css app.js .nojekyll assets detail-assets library build/
+            cp -R index.html styles.css app.js .nojekyll assets detail-assets build/
+            if [ -d library ]; then cp -R library build/; fi
           else
             for part in portfolio-site-*.zip; do unzip -qo "$part" -d build; done
           fi
