@@ -234,7 +234,7 @@
 
   const projects = {
     yi: {
-      "index": "01 / 05",
+      "index": "01 / 06",
       "tag": "VISUAL / CULTURE",
       "title": "Yi Chronicle",
       "zh": "焰绣银章：彝族非遗文化基因活化图鉴",
@@ -243,74 +243,52 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-1-01.webp",
-                      "label": "封面_画板 1.jpg",
-                      "width": 3508,
-                      "height": 4961
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-1-02.webp",
-                      "label": "封面-02.jpg",
-                      "width": 3508,
-                      "height": 4961
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-1-03.webp",
-                      "label": "封面-03.jpg",
-                      "width": 3508,
-                      "height": 4961
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-1-04.webp",
-                      "label": "封面-04.jpg",
-                      "width": 3508,
-                      "height": 4961
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-1-05.webp",
-                      "label": "焰绣银章：彝族非遗文化基因活化图鉴.jpg",
-                      "width": 5026,
-                      "height": 7107
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-1-06.webp",
-                      "label": "彝族非遗信息可视化_画板 1.jpg",
+                      "src": "library/1-a.webp",
+                      "label": "a彝族非遗信息可视化_画板 1.jpg",
                       "width": 4961,
-                      "height": 3508
+                      "height": 3508,
+                      "letter": "a"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-1-07.webp",
-                      "label": "彝族非遗信息可视化-02.jpg",
+                      "src": "library/1-b.webp",
+                      "label": "b彝族非遗信息可视化-02.jpg",
                       "width": 4961,
-                      "height": 3508
+                      "height": 3508,
+                      "letter": "b"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-1-08.webp",
-                      "label": "彝族非遗信息可视化-03.jpg",
+                      "src": "library/1-c.webp",
+                      "label": "c彝族非遗信息可视化-03.jpg",
                       "width": 4961,
-                      "height": 3508
+                      "height": 3508,
+                      "letter": "c"
+              },
+              {
+                      "type": "image",
+                      "src": "library/1-d.webp",
+                      "label": "d封面.jpg",
+                      "width": 3508,
+                      "height": 4961,
+                      "letter": "d"
               },
               {
                       "type": "video",
-                      "src": "detail-assets/detail-1-09.mp4",
-                      "label": "彝族视频1.mp4"
+                      "src": "library/1-e.mp4",
+                      "label": "detail-1-09.mp4",
+                      "letter": "e"
               },
               {
                       "type": "video",
-                      "src": "detail-assets/detail-1-10.mp4",
-                      "label": "彝族视频2.MP4"
+                      "src": "library/1-f.mp4",
+                      "label": "detail-1-10.mp4",
+                      "letter": "f"
               }
       ]
     },
     byd: {
-      "index": "02 / 05",
+      "index": "02 / 06",
       "tag": "AUTOMOTIVE HMI · UX / UI",
       "title": "BYD Intelligent Cockpit",
       "zh": "比亚迪智能座舱 HMI 体验设计",
@@ -318,59 +296,23 @@
       "description": "A modular cockpit experience that keeps critical driving information legible, calm and immediately actionable.",
       items: [
               {
-                      "type": "file",
-                      "name": "Figma链接（李子琪+蒋佳彤）——UI作业.docx",
-                      "ext": "DOCX"
-              },
-              {
-                      "type": "file",
-                      "name": "比亚迪HMI设计长图.pdf",
-                      "ext": "PDF"
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-2-03.webp",
-                      "label": "导航.png",
-                      "width": 1920,
-                      "height": 1080
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-2-04.webp",
-                      "label": "汽车ui.png",
-                      "width": 1920,
-                      "height": 1080
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-2-05.webp",
-                      "label": "汽车ui2.png",
-                      "width": 4310,
-                      "height": 2424
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-2-06.webp",
-                      "label": "汽车ui3.png",
-                      "width": 5430,
-                      "height": 3055
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-2-07.gif",
-                      "label": "中控动图.gif",
-                      "width": 1920,
-                      "height": 1086
-              },
-              {
                       "type": "video",
-                      "src": "detail-assets/detail-2-08.mp4",
-                      "label": "中控视频.mp4"
+                      "src": "library/2-a.mp4",
+                      "label": "detail-2-08.mp4",
+                      "letter": "a"
+              },
+              {
+                      "type": "image",
+                      "src": "library/2-b.jpg",
+                      "label": "b设计提案.jpg",
+                      "width": 1858,
+                      "height": 29376,
+                      "letter": "b"
               }
       ]
     },
     mediflow: {
-      "index": "03 / 05",
+      "index": "03 / 06",
       "tag": "SERVICE DESIGN · MOBILE UX",
       "title": "MediFlow",
       "zh": "预约挂号 App 用户体验设计",
@@ -379,20 +321,22 @@
       items: [
               {
                       "type": "video",
-                      "src": "detail-assets/detail-3-01.mp4",
-                      "label": "预约挂号.mp4"
+                      "src": "library/3-a.mp4",
+                      "label": "detail-3-01.mp4",
+                      "letter": "a"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-3-02.jpg",
-                      "label": "长图.png",
+                      "src": "library/3-b.jpg",
+                      "label": "b长图.png",
                       "width": 1920,
-                      "height": 23370
+                      "height": 23370,
+                      "letter": "b"
               }
       ]
     },
     poluo: {
-      "index": "04 / 05",
+      "index": "04 / 06",
       "tag": "INTERACTION / EXPERIENCE",
       "title": "坡见龙门",
       "zh": "文化交互产品与可操作原型设计",
@@ -400,38 +344,37 @@
       "description": "A cultural interaction prototype combining spatial storytelling, screen feedback and an operable experience flow.",
       items: [
               {
-                      "type": "file",
-                      "name": "4.坡见龙门展示.pptx",
-                      "ext": "PPTX"
-              },
-              {
-                      "type": "file",
-                      "name": "5.可交互原型链接.pdf",
-                      "ext": "PDF"
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-4-03.webp",
-                      "label": "ChatGPT Image 2026年7月20日 02_13_17.png",
-                      "width": 1672,
-                      "height": 941
-              },
-              {
-                      "type": "image",
-                      "src": "detail-assets/detail-4-04.webp",
-                      "label": "图片.png",
-                      "width": 1600,
-                      "height": 900
-              },
-              {
                       "type": "video",
-                      "src": "detail-assets/detail-4-05.mp4",
-                      "label": "演示视频.mp4"
+                      "src": "library/4-a.mp4",
+                      "label": "detail-4-05.mp4",
+                      "letter": "a"
+              },
+              {
+                      "type": "image",
+                      "src": "library/4-b.webp",
+                      "label": "b封面.png",
+                      "width": 1672,
+                      "height": 941,
+                      "letter": "b"
+              },
+              {
+                      "type": "image",
+                      "src": "library/4-c.webp",
+                      "label": "c图片.png",
+                      "width": 1600,
+                      "height": 900,
+                      "letter": "c"
+              },
+              {
+                      "type": "file",
+                      "name": "d坡见龙门展示.pptx",
+                      "ext": "PPTX",
+                      "letter": "d"
               }
       ]
     },
     five: {
-      "index": "05 / 05",
+      "index": "05 / 06",
       "tag": "PRODUCT DESIGN · A—F",
       "title": "Product Boards",
       "zh": "智能产品设计展板合集",
@@ -440,127 +383,144 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5a-01.webp",
+                      "src": "library/5a-[砺]船体锈蚀切割一体机1.webp",
                       "label": "[砺]船体锈蚀切割一体机1.jpg",
                       "width": 2560,
-                      "height": 3622
+                      "height": 3622,
+                      "letter": "a"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5a-02.webp",
+                      "src": "library/5a-[砺]船体锈蚀切割一体机2.webp",
                       "label": "[砺]船体锈蚀切割一体机2.jpg",
                       "width": 2560,
-                      "height": 3622
+                      "height": 3622,
+                      "letter": "a"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5b-01.webp",
+                      "src": "library/5b-PURE.河道清淤泥装备1.webp",
                       "label": "PURE.河道清淤泥装备1.jpg",
                       "width": 3508,
-                      "height": 4961
+                      "height": 4961,
+                      "letter": "b"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5b-02.webp",
+                      "src": "library/5b-PURE.河道清淤泥装备2.webp",
                       "label": "PURE.河道清淤泥装备2.jpg",
                       "width": 3508,
-                      "height": 4961
+                      "height": 4961,
+                      "letter": "b"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5b-03.webp",
+                      "src": "library/5b-PURE.河道清淤泥装备3.webp",
                       "label": "PURE.河道清淤泥装备3.jpg",
                       "width": 3508,
-                      "height": 4961
+                      "height": 4961,
+                      "letter": "b"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5c-01.webp",
+                      "src": "library/5c-古建筑修复机器1.webp",
                       "label": "古建筑修复机器1.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "c"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5c-02.webp",
+                      "src": "library/5c-古建筑修复机器2.webp",
                       "label": "古建筑修复机器2.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "c"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5c-03.webp",
+                      "src": "library/5c-古建筑修复机器3.webp",
                       "label": "古建筑修复机器3.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "c"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5d-01.webp",
+                      "src": "library/5d-矿用应急搜救与排水一体化机器1.webp",
                       "label": "矿用应急搜救与排水一体化机器1.jpg",
                       "width": 1787,
-                      "height": 2527
+                      "height": 2527,
+                      "letter": "d"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5d-02.webp",
+                      "src": "library/5d-矿用应急搜救与排水一体化机器2.webp",
                       "label": "矿用应急搜救与排水一体化机器2.jpg",
                       "width": 1192,
-                      "height": 1685
+                      "height": 1685,
+                      "letter": "d"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5d-03.webp",
+                      "src": "library/5d-矿用应急搜救与排水一体化机器3.webp",
                       "label": "矿用应急搜救与排水一体化机器3.jpg",
                       "width": 1192,
-                      "height": 1685
+                      "height": 1685,
+                      "letter": "d"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5e-01.webp",
+                      "src": "library/5e-农作专家机器1.webp",
                       "label": "农作专家机器1.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "e"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5e-02.webp",
+                      "src": "library/5e-农作专家机器2.webp",
                       "label": "农作专家机器2.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "e"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5e-03.webp",
+                      "src": "library/5e-农作专家机器3.webp",
                       "label": "农作专家机器3.jpg",
                       "width": 1920,
-                      "height": 2717
+                      "height": 2717,
+                      "letter": "e"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5f-01.webp",
+                      "src": "library/5f-适老助餐辅具1.webp",
                       "label": "适老助餐辅具1.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "f"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5f-02.webp",
+                      "src": "library/5f-适老助餐辅具2.webp",
                       "label": "适老助餐辅具2.jpg",
                       "width": 1280,
-                      "height": 1812
+                      "height": 1812,
+                      "letter": "f"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5f-03.webp",
+                      "src": "library/5f-适老助餐辅具3.webp",
                       "label": "适老助餐辅具3.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "f"
               }
       ]
     },
     hull: {
-      "index": "05A / 05",
+      "index": "05A / 06",
       "tag": "MARINE ROBOTICS",
       "title": "Hull Lab",
       "zh": "船体锈蚀切割一体机",
@@ -569,22 +529,24 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5a-01.webp",
+                      "src": "library/5a-[砺]船体锈蚀切割一体机1.webp",
                       "label": "[砺]船体锈蚀切割一体机1.jpg",
                       "width": 2560,
-                      "height": 3622
+                      "height": 3622,
+                      "letter": "a"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5a-02.webp",
+                      "src": "library/5a-[砺]船体锈蚀切割一体机2.webp",
                       "label": "[砺]船体锈蚀切割一体机2.jpg",
                       "width": 2560,
-                      "height": 3622
+                      "height": 3622,
+                      "letter": "a"
               }
       ]
     },
     pure: {
-      "index": "05B / 05",
+      "index": "05B / 06",
       "tag": "ENVIRONMENTAL PRODUCT",
       "title": "Pure River",
       "zh": "PURE 河道清淤装备",
@@ -593,29 +555,32 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5b-01.webp",
+                      "src": "library/5b-PURE.河道清淤泥装备1.webp",
                       "label": "PURE.河道清淤泥装备1.jpg",
                       "width": 3508,
-                      "height": 4961
+                      "height": 4961,
+                      "letter": "b"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5b-02.webp",
+                      "src": "library/5b-PURE.河道清淤泥装备2.webp",
                       "label": "PURE.河道清淤泥装备2.jpg",
                       "width": 3508,
-                      "height": 4961
+                      "height": 4961,
+                      "letter": "b"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5b-03.webp",
+                      "src": "library/5b-PURE.河道清淤泥装备3.webp",
                       "label": "PURE.河道清淤泥装备3.jpg",
                       "width": 3508,
-                      "height": 4961
+                      "height": 4961,
+                      "letter": "b"
               }
       ]
     },
     heritage: {
-      "index": "05C / 05",
+      "index": "05C / 06",
       "tag": "CULTURAL TECHNOLOGY",
       "title": "Heritage Repair",
       "zh": "古建筑修复机器人",
@@ -624,29 +589,32 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5c-01.webp",
+                      "src": "library/5c-古建筑修复机器1.webp",
                       "label": "古建筑修复机器1.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "c"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5c-02.webp",
+                      "src": "library/5c-古建筑修复机器2.webp",
                       "label": "古建筑修复机器2.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "c"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5c-03.webp",
+                      "src": "library/5c-古建筑修复机器3.webp",
                       "label": "古建筑修复机器3.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "c"
               }
       ]
     },
     mine: {
-      "index": "05D / 05",
+      "index": "05D / 06",
       "tag": "EMERGENCY ROBOTICS",
       "title": "Deep Rescue",
       "zh": "矿用应急搜救与排水一体化机器",
@@ -655,29 +623,32 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5d-01.webp",
+                      "src": "library/5d-矿用应急搜救与排水一体化机器1.webp",
                       "label": "矿用应急搜救与排水一体化机器1.jpg",
                       "width": 1787,
-                      "height": 2527
+                      "height": 2527,
+                      "letter": "d"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5d-02.webp",
+                      "src": "library/5d-矿用应急搜救与排水一体化机器2.webp",
                       "label": "矿用应急搜救与排水一体化机器2.jpg",
                       "width": 1192,
-                      "height": 1685
+                      "height": 1685,
+                      "letter": "d"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5d-03.webp",
+                      "src": "library/5d-矿用应急搜救与排水一体化机器3.webp",
                       "label": "矿用应急搜救与排水一体化机器3.jpg",
                       "width": 1192,
-                      "height": 1685
+                      "height": 1685,
+                      "letter": "d"
               }
       ]
     },
     agri: {
-      "index": "05E / 05",
+      "index": "05E / 06",
       "tag": "AGRICULTURAL ROBOTICS",
       "title": "Agri Expert",
       "zh": "农作专家机器人",
@@ -686,29 +657,32 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5e-01.webp",
+                      "src": "library/5e-农作专家机器1.webp",
                       "label": "农作专家机器1.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "e"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5e-02.webp",
+                      "src": "library/5e-农作专家机器2.webp",
                       "label": "农作专家机器2.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "e"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5e-03.webp",
+                      "src": "library/5e-农作专家机器3.webp",
                       "label": "农作专家机器3.jpg",
                       "width": 1920,
-                      "height": 2717
+                      "height": 2717,
+                      "letter": "e"
               }
       ]
     },
     care: {
-      "index": "05F / 05",
+      "index": "05F / 06",
       "tag": "INCLUSIVE DESIGN",
       "title": "Care Assist",
       "zh": "适老助餐辅具",
@@ -717,30 +691,232 @@
       items: [
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5f-01.webp",
+                      "src": "library/5f-适老助餐辅具1.webp",
                       "label": "适老助餐辅具1.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "f"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5f-02.webp",
+                      "src": "library/5f-适老助餐辅具2.webp",
                       "label": "适老助餐辅具2.jpg",
                       "width": 1280,
-                      "height": 1812
+                      "height": 1812,
+                      "letter": "f"
               },
               {
                       "type": "image",
-                      "src": "detail-assets/detail-5f-03.webp",
+                      "src": "library/5f-适老助餐辅具3.webp",
                       "label": "适老助餐辅具3.jpg",
                       "width": 1280,
-                      "height": 1811
+                      "height": 1811,
+                      "letter": "f"
               }
       ]
     }
   };
 
+const honors = [
+    {
+      "src": "library/honor-01.webp",
+      "title": "UVADC国3等奖",
+      "width": 4960,
+      "height": 7015
+    },
+    {
+      "src": "library/honor-02.webp",
+      "title": "UVADC省一等奖",
+      "width": 4960,
+      "height": 7015
+    },
+    {
+      "src": "library/honor-03.webp",
+      "title": "东方创意省银",
+      "width": 10737,
+      "height": 7653
+    },
+    {
+      "src": "library/honor-04.webp",
+      "title": "东方创意省银2",
+      "width": 10737,
+      "height": 7653
+    },
+    {
+      "src": "library/honor-05.webp",
+      "title": "东方设计奖国2",
+      "width": 1190,
+      "height": 1666
+    },
+    {
+      "src": "library/honor-06.webp",
+      "title": "东方设计奖国3",
+      "width": 1190,
+      "height": 1666
+    },
+    {
+      "src": "library/honor-07.webp",
+      "title": "东方设计奖省2",
+      "width": 1190,
+      "height": 1666
+    },
+    {
+      "src": "library/honor-08.webp",
+      "title": "国青杯一等奖",
+      "width": 2686,
+      "height": 1917
+    },
+    {
+      "src": "library/honor-09.webp",
+      "title": "国青杯三等奖1",
+      "width": 2752,
+      "height": 1947
+    },
+    {
+      "src": "library/honor-10.webp",
+      "title": "国青杯三等奖2",
+      "width": 2650,
+      "height": 1818
+    },
+    {
+      "src": "library/honor-11.webp",
+      "title": "国青杯二等奖",
+      "width": 1818,
+      "height": 1280
+    },
+    {
+      "src": "library/honor-12.webp",
+      "title": "大文赛国1（矿井救援）",
+      "width": 2480,
+      "height": 3508
+    },
+    {
+      "src": "library/honor-13.webp",
+      "title": "大文赛国1（震后外骨骼）",
+      "width": 2480,
+      "height": 3508
+    },
+    {
+      "src": "library/honor-14.webp",
+      "title": "好创意国三（彝族火把节）",
+      "width": 4762,
+      "height": 6735
+    },
+    {
+      "src": "library/honor-15.webp",
+      "title": "好创意国三（雪地车）",
+      "width": 4762,
+      "height": 6735
+    },
+    {
+      "src": "library/honor-16.webp",
+      "title": "好创意国三（露营灯）",
+      "width": 4762,
+      "height": 6735
+    },
+    {
+      "src": "library/honor-17.webp",
+      "title": "未来设计国2",
+      "width": 4898,
+      "height": 6872
+    },
+    {
+      "src": "library/honor-18.webp",
+      "title": "未来设计省1",
+      "width": 4762,
+      "height": 6735
+    },
+    {
+      "src": "library/honor-19.webp",
+      "title": "未来设计省2",
+      "width": 4762,
+      "height": 6735
+    },
+    {
+      "src": "library/honor-20.webp",
+      "title": "未来设计省3",
+      "width": 4762,
+      "height": 6735
+    }
+  ];
 
+
+
+
+
+  const honorDialog = document.getElementById("honorDialog");
+  const honorList = document.getElementById("honorList");
+  const honorImage = document.getElementById("honorImage");
+  const honorTitle = document.getElementById("honorTitle");
+  const honorCounter = document.getElementById("honorCounter");
+  let honorIndex = 0;
+
+  if (honorList) {
+    honorList.innerHTML = honors.map((honor, index) => `
+      <button class="honor-item tilt-card" type="button" data-honor="${index}">
+        <span>${String(index + 1).padStart(2, "0")}</span>
+        <strong>${honor.title}</strong>
+        <i>↗</i>
+      </button>`).join("");
+  }
+
+  const showHonor = (index) => {
+    if (!honors.length || !honorDialog) return;
+    honorIndex = (index + honors.length) % honors.length;
+    const honor = honors[honorIndex];
+    honorImage.src = honor.src;
+    honorImage.alt = honor.title;
+    honorTitle.textContent = honor.title;
+    honorCounter.textContent = `${String(honorIndex + 1).padStart(2, "0")} / ${String(honors.length).padStart(2, "0")}`;
+    if (!honorDialog.open && typeof honorDialog.showModal === "function") {
+      honorDialog.showModal();
+      body.classList.add("dialog-open");
+    }
+  };
+
+  document.querySelectorAll("[data-honor]").forEach((button) => {
+    button.addEventListener("click", () => showHonor(Number(button.dataset.honor)));
+  });
+  document.getElementById("honorPrev")?.addEventListener("click", () => showHonor(honorIndex - 1));
+  document.getElementById("honorNext")?.addEventListener("click", () => showHonor(honorIndex + 1));
+  honorDialog?.querySelector(".honor-dialog__close")?.addEventListener("click", () => {
+    honorDialog.close();
+    body.classList.remove("dialog-open");
+  });
+  honorDialog?.addEventListener("cancel", () => body.classList.remove("dialog-open"));
+  honorDialog?.addEventListener("click", (event) => {
+    if (event.target === honorDialog) {
+      honorDialog.close();
+      body.classList.remove("dialog-open");
+    }
+  });
+  window.addEventListener("keydown", (event) => {
+    if (!honorDialog?.open) return;
+    if (event.key === "ArrowLeft") showHonor(honorIndex - 1);
+    if (event.key === "ArrowRight") showHonor(honorIndex + 1);
+  });
+
+  const setupCardTilt = () => {
+    if (!finePointer.matches || reducedMotion.matches) return;
+    document.querySelectorAll(".tilt-card").forEach((card) => {
+      card.addEventListener("pointermove", (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - 0.5;
+        const y = (event.clientY - rect.top) / rect.height - 0.5;
+        const strength = card.classList.contains("project-entry__visual") ? 8 : 5;
+        const lift = card.classList.contains("project-entry__visual") ? -10 : -6;
+        card.style.transform = `perspective(900px) rotateX(${(-y * strength).toFixed(2)}deg) rotateY(${(x * strength).toFixed(2)}deg) translateY(${lift}px)`;
+      });
+      card.addEventListener("pointerleave", () => { card.style.transform = ""; });
+    });
+  };
+  setupCardTilt();
+
+  document.querySelectorAll("[data-scroll-target]").forEach((button) => {
+    button.addEventListener("click", () => {
+      document.getElementById(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 
   const dialog = document.getElementById("projectDialog");
   const dialogTag = document.getElementById("dialogTag");

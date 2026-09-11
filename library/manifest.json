@@ -1,0 +1,442 @@
+{
+  "projects": {
+    "1": [
+      {
+        "type": "image",
+        "src": "library/1-a.webp",
+        "label": "a彝族非遗信息可视化_画板 1.jpg",
+        "width": 4961,
+        "height": 3508,
+        "letter": "a"
+      },
+      {
+        "type": "image",
+        "src": "library/1-b.webp",
+        "label": "b彝族非遗信息可视化-02.jpg",
+        "width": 4961,
+        "height": 3508,
+        "letter": "b"
+      },
+      {
+        "type": "image",
+        "src": "library/1-c.webp",
+        "label": "c彝族非遗信息可视化-03.jpg",
+        "width": 4961,
+        "height": 3508,
+        "letter": "c"
+      },
+      {
+        "type": "image",
+        "src": "library/1-d.webp",
+        "label": "d封面.jpg",
+        "width": 3508,
+        "height": 4961,
+        "letter": "d"
+      },
+      {
+        "type": "video",
+        "src": "library/1-e.mp4",
+        "label": "detail-1-09.mp4",
+        "letter": "e"
+      },
+      {
+        "type": "video",
+        "src": "library/1-f.mp4",
+        "label": "detail-1-10.mp4",
+        "letter": "f"
+      }
+    ],
+    "2": [
+      {
+        "type": "video",
+        "src": "library/2-a.mp4",
+        "label": "detail-2-08.mp4",
+        "letter": "a"
+      },
+      {
+        "type": "image",
+        "src": "library/2-b.jpg",
+        "label": "b设计提案.jpg",
+        "width": 1858,
+        "height": 29376,
+        "letter": "b"
+      }
+    ],
+    "3": [
+      {
+        "type": "video",
+        "src": "library/3-a.mp4",
+        "label": "detail-3-01.mp4",
+        "letter": "a"
+      },
+      {
+        "type": "image",
+        "src": "library/3-b.jpg",
+        "label": "b长图.png",
+        "width": 1920,
+        "height": 23370,
+        "letter": "b"
+      }
+    ],
+    "4": [
+      {
+        "type": "video",
+        "src": "library/4-a.mp4",
+        "label": "detail-4-05.mp4",
+        "letter": "a"
+      },
+      {
+        "type": "image",
+        "src": "library/4-b.webp",
+        "label": "b封面.png",
+        "width": 1672,
+        "height": 941,
+        "letter": "b"
+      },
+      {
+        "type": "image",
+        "src": "library/4-c.webp",
+        "label": "c图片.png",
+        "width": 1600,
+        "height": 900,
+        "letter": "c"
+      },
+      {
+        "type": "file",
+        "name": "d坡见龙门展示.pptx",
+        "ext": "PPTX",
+        "letter": "d"
+      }
+    ],
+    "5a": [
+      {
+        "type": "image",
+        "src": "library/5a-[砺]船体锈蚀切割一体机1.webp",
+        "label": "[砺]船体锈蚀切割一体机1.jpg",
+        "width": 2560,
+        "height": 3622,
+        "letter": "a"
+      },
+      {
+        "type": "image",
+        "src": "library/5a-[砺]船体锈蚀切割一体机2.webp",
+        "label": "[砺]船体锈蚀切割一体机2.jpg",
+        "width": 2560,
+        "height": 3622,
+        "letter": "a"
+      }
+    ],
+    "5b": [
+      {
+        "type": "image",
+        "src": "library/5b-PURE.河道清淤泥装备1.webp",
+        "label": "PURE.河道清淤泥装备1.jpg",
+        "width": 3508,
+        "height": 4961,
+        "letter": "b"
+      },
+      {
+        "type": "image",
+        "src": "library/5b-PURE.河道清淤泥装备2.webp",
+        "label": "PURE.河道清淤泥装备2.jpg",
+        "width": 3508,
+        "height": 4961,
+        "letter": "b"
+      },
+      {
+        "type": "image",
+        "src": "library/5b-PURE.河道清淤泥装备3.webp",
+        "label": "PURE.河道清淤泥装备3.jpg",
+        "width": 3508,
+        "height": 4961,
+        "letter": "b"
+      }
+    ],
+    "5c": [
+      {
+        "type": "image",
+        "src": "library/5c-古建筑修复机器1.webp",
+        "label": "古建筑修复机器1.jpg",
+        "width": 1280,
+        "height": 1811,
+        "letter": "c"
+      },
+      {
+        "type": "image",
+        "src": "library/5c-古建筑修复机器2.webp",
+        "label": "古建筑修复机器2.jpg",
+        "width": 1280,
+        "height": 1811,
+        "letter": "c"
+      },
+      {
+        "type": "image",
+        "src": "library/5c-古建筑修复机器3.webp",
+        "label": "古建筑修复机器3.jpg",
+        "width": 1280,
+        "height": 1811,
+        "letter": "c"
+      }
+    ],
+    "5d": [
+      {
+        "type": "image",
+        "src": "library/5d-矿用应急搜救与排水一体化机器1.webp",
+        "label": "矿用应急搜救与排水一体化机器1.jpg",
+        "width": 1787,
+        "height": 2527,
+        "letter": "d"
+      },
+      {
+        "type": "image",
+        "src": "library/5d-矿用应急搜救与排水一体化机器2.webp",
+        "label": "矿用应急搜救与排水一体化机器2.jpg",
+        "width": 1192,
+        "height": 1685,
+        "letter": "d"
+      },
+      {
+        "type": "image",
+        "src": "library/5d-矿用应急搜救与排水一体化机器3.webp",
+        "label": "矿用应急搜救与排水一体化机器3.jpg",
+        "width": 1192,
+        "height": 1685,
+        "letter": "d"
+      }
+    ],
+    "5e": [
+      {
+        "type": "image",
+        "src": "library/5e-农作专家机器1.webp",
+        "label": "农作专家机器1.jpg",
+        "width": 1280,
+        "height": 1811,
+        "letter": "e"
+      },
+      {
+        "type": "image",
+        "src": "library/5e-农作专家机器2.webp",
+        "label": "农作专家机器2.jpg",
+        "width": 1280,
+        "height": 1811,
+        "letter": "e"
+      },
+      {
+        "type": "image",
+        "src": "library/5e-农作专家机器3.webp",
+        "label": "农作专家机器3.jpg",
+        "width": 1920,
+        "height": 2717,
+        "letter": "e"
+      }
+    ],
+    "5f": [
+      {
+        "type": "image",
+        "src": "library/5f-适老助餐辅具1.webp",
+        "label": "适老助餐辅具1.jpg",
+        "width": 1280,
+        "height": 1811,
+        "letter": "f"
+      },
+      {
+        "type": "image",
+        "src": "library/5f-适老助餐辅具2.webp",
+        "label": "适老助餐辅具2.jpg",
+        "width": 1280,
+        "height": 1812,
+        "letter": "f"
+      },
+      {
+        "type": "image",
+        "src": "library/5f-适老助餐辅具3.webp",
+        "label": "适老助餐辅具3.jpg",
+        "width": 1280,
+        "height": 1811,
+        "letter": "f"
+      }
+    ]
+  },
+  "honors": [
+    {
+      "type": "image",
+      "src": "library/honor-01.webp",
+      "label": "UVADC国3等奖.jpg",
+      "width": 4960,
+      "height": 7015,
+      "title": "UVADC国3等奖",
+      "index": 1
+    },
+    {
+      "type": "image",
+      "src": "library/honor-02.webp",
+      "label": "UVADC省一等奖.jpg",
+      "width": 4960,
+      "height": 7015,
+      "title": "UVADC省一等奖",
+      "index": 2
+    },
+    {
+      "type": "image",
+      "src": "library/honor-03.webp",
+      "label": "东方创意省银.jpg",
+      "width": 10737,
+      "height": 7653,
+      "title": "东方创意省银",
+      "index": 3
+    },
+    {
+      "type": "image",
+      "src": "library/honor-04.webp",
+      "label": "东方创意省银2.jpg",
+      "width": 10737,
+      "height": 7653,
+      "title": "东方创意省银2",
+      "index": 4
+    },
+    {
+      "type": "image",
+      "src": "library/honor-05.webp",
+      "label": "东方设计奖国2.jpg",
+      "width": 1190,
+      "height": 1666,
+      "title": "东方设计奖国2",
+      "index": 5
+    },
+    {
+      "type": "image",
+      "src": "library/honor-06.webp",
+      "label": "东方设计奖国3.jpg",
+      "width": 1190,
+      "height": 1666,
+      "title": "东方设计奖国3",
+      "index": 6
+    },
+    {
+      "type": "image",
+      "src": "library/honor-07.webp",
+      "label": "东方设计奖省2.jpg",
+      "width": 1190,
+      "height": 1666,
+      "title": "东方设计奖省2",
+      "index": 7
+    },
+    {
+      "type": "image",
+      "src": "library/honor-08.webp",
+      "label": "国青杯一等奖.jpg",
+      "width": 2686,
+      "height": 1917,
+      "title": "国青杯一等奖",
+      "index": 8
+    },
+    {
+      "type": "image",
+      "src": "library/honor-09.webp",
+      "label": "国青杯三等奖1.jpg",
+      "width": 2752,
+      "height": 1947,
+      "title": "国青杯三等奖1",
+      "index": 9
+    },
+    {
+      "type": "image",
+      "src": "library/honor-10.webp",
+      "label": "国青杯三等奖2.jpg",
+      "width": 2650,
+      "height": 1818,
+      "title": "国青杯三等奖2",
+      "index": 10
+    },
+    {
+      "type": "image",
+      "src": "library/honor-11.webp",
+      "label": "国青杯二等奖.jpg",
+      "width": 1818,
+      "height": 1280,
+      "title": "国青杯二等奖",
+      "index": 11
+    },
+    {
+      "type": "image",
+      "src": "library/honor-12.webp",
+      "label": "大文赛国1（矿井救援）.png",
+      "width": 2480,
+      "height": 3508,
+      "title": "大文赛国1（矿井救援）",
+      "index": 12
+    },
+    {
+      "type": "image",
+      "src": "library/honor-13.webp",
+      "label": "大文赛国1（震后外骨骼）.png",
+      "width": 2480,
+      "height": 3508,
+      "title": "大文赛国1（震后外骨骼）",
+      "index": 13
+    },
+    {
+      "type": "image",
+      "src": "library/honor-14.webp",
+      "label": "好创意国三（彝族火把节）.jpg",
+      "width": 4762,
+      "height": 6735,
+      "title": "好创意国三（彝族火把节）",
+      "index": 14
+    },
+    {
+      "type": "image",
+      "src": "library/honor-15.webp",
+      "label": "好创意国三（雪地车）.jpg",
+      "width": 4762,
+      "height": 6735,
+      "title": "好创意国三（雪地车）",
+      "index": 15
+    },
+    {
+      "type": "image",
+      "src": "library/honor-16.webp",
+      "label": "好创意国三（露营灯）.jpg",
+      "width": 4762,
+      "height": 6735,
+      "title": "好创意国三（露营灯）",
+      "index": 16
+    },
+    {
+      "type": "image",
+      "src": "library/honor-17.webp",
+      "label": "未来设计国2.jpg",
+      "width": 4898,
+      "height": 6872,
+      "title": "未来设计国2",
+      "index": 17
+    },
+    {
+      "type": "image",
+      "src": "library/honor-18.webp",
+      "label": "未来设计省1.jpg",
+      "width": 4762,
+      "height": 6735,
+      "title": "未来设计省1",
+      "index": 18
+    },
+    {
+      "type": "image",
+      "src": "library/honor-19.webp",
+      "label": "未来设计省2.jpg",
+      "width": 4762,
+      "height": 6735,
+      "title": "未来设计省2",
+      "index": 19
+    },
+    {
+      "type": "image",
+      "src": "library/honor-20.webp",
+      "label": "未来设计省3.jpg",
+      "width": 4762,
+      "height": 6735,
+      "title": "未来设计省3",
+      "index": 20
+    }
+  ]
+}
