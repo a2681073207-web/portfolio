@@ -27,17 +27,27 @@ jobs:
         id: source
         run: |
           if [ -f index.html ]; then
-            echo "ready=true" >> "$GITHUB_OUTPUT"
+            update_count=$(find . -maxdepth 1 -name 'portfolio-update-*.zip' | wc -l)
             echo "source_mode=true" >> "$GITHUB_OUTPUT"
-          else
-            count=$(find . -maxdepth 1 -name 'portfolio-site-*.zip' | wc -l)
-            if [ "$count" -lt 3 ]; then
+            if [ "$update_count" -eq 0 ]; then
+              echo "ready=true" >> "$GITHUB_OUTPUT"
+              echo "update_mode=false" >> "$GITHUB_OUTPUT"
+            elif [ "$update_count" -lt 3 ]; then
               echo "ready=false" >> "$GITHUB_OUTPUT"
-              echo "source_mode=false" >> "$GITHUB_OUTPUT"
-              echo "Waiting for all 3 site chunks."
+              echo "update_mode=true" >> "$GITHUB_OUTPUT"
+              echo "Waiting for all 3 update chunks."
             else
               echo "ready=true" >> "$GITHUB_OUTPUT"
-              echo "source_mode=false" >> "$GITHUB_OUTPUT"
+              echo "update_mode=true" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            count=$(find . -maxdepth 1 -name 'portfolio-site-*.zip' | wc -l)
+            echo "source_mode=false" >> "$GITHUB_OUTPUT"
+            if [ "$count" -lt 3 ]; then
+              echo "ready=false" >> "$GITHUB_OUTPUT"
+              echo "Waiting for all 3 initial site chunks."
+            else
+              echo "ready=true" >> "$GITHUB_OUTPUT"
             fi
           fi
       - name: Configure Pages
@@ -51,9 +61,12 @@ jobs:
           rm -rf build
           mkdir -p build
           if [ "${{ steps.source.outputs.source_mode }}" = "true" ]; then
-            cp -R index.html styles.css app.js .nojekyll assets detail-assets build/
+            cp -R index.html styles.css app.js .nojekyll assets detail-assets library build/
           else
             for part in portfolio-site-*.zip; do unzip -qo "$part" -d build; done
+          fi
+          if [ "${{ steps.source.outputs.update_mode }}" = "true" ]; then
+            for part in portfolio-update-*.zip; do unzip -qo "$part" -d build; done
           fi
       - name: Upload static site
         if: steps.source.outputs.ready == 'true'
@@ -64,14 +77,25 @@ jobs:
         if: steps.source.outputs.ready == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Expand source archive
+      - name: Apply source update
+        if: steps.source.outputs.ready == 'true' && steps.source.outputs.update_mode == 'true'
+        run: |
+          for part in portfolio-update-*.zip; do unzip -qo "$part" -d .; done
+          git rm -q portfolio-update-*.zip
+          touch .nojekyll
+          git add index.html styles.css app.js .nojekyll library
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update portfolio source and honors [skip ci]"
+          git push
+      - name: Expand initial source archive
         if: steps.source.outputs.ready == 'true' && steps.source.outputs.source_mode == 'false'
         run: |
           for part in portfolio-site-*.zip; do unzip -qo "$part" -d .; done
           git rm -q portfolio-site-*.zip
           touch .nojekyll
           git add index.html styles.css app.js .nojekyll assets detail-assets
-          if git diff --cached --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Store expanded portfolio sources [skip ci]"
