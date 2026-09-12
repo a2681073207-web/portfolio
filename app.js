@@ -205,6 +205,8 @@
     heroVisible = true;
     pointerMoved = true;
     setPointerFromClient(event.clientX, event.clientY);
+    hero.style.setProperty("--hero-x", `${pointer.x}px`);
+    hero.style.setProperty("--hero-y", `${pointer.y}px`);
     lastPointerMove = performance.now();
     pointerHint?.classList.add("is-hidden");
     if (performance.now() - lastCycle > 115) spawnPlane();
