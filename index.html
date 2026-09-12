@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f1efe8">
+  <meta name="theme-color" content="#f5f1e9">
   <meta name="description" content="Ziqi Li — Product designer focused on intelligent products, human-centered experiences and visual storytelling.">
   <title>Ziqi Li — Product Designer</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2311110f'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial Narrow,Arial' font-size='42' font-weight='700' fill='%23f1efe8'%3EZ%3C/text%3E%3C/svg%3E">
@@ -64,7 +64,6 @@
       <div class="hero__noise" aria-hidden="true"></div>
       <div class="hero__grid" aria-hidden="true"></div>
       <div class="pointer-stage" id="pointerStage" aria-hidden="true"></div>
-
       <div class="hero__eyebrow reveal-load">
         <span class="dot"></span>
         <span>PRODUCT DESIGNER · UX / INDUSTRIAL / VISUAL</span>
@@ -119,7 +118,7 @@
             <button class="reel-toggle" id="reelToggle" type="button"><i>Ⅱ</i><span>PLAY WITH SOUND</span></button>
             <span class="reel-time" id="reelTime">00:00 / 00:23</span>
           </div>
-          <div class="reel-progress"><span id="reelProgress"></span></div>
+          <div class="reel-progress"><span id="reelProgress"></span><input class="reel-scrubber" id="reelScrubber" type="range" min="0" max="1000" step="1" value="0" aria-label="Showreel 播放进度"></div>
         </div>
         <div class="showreel__footer">
           <span>SHOWREEL / SOUND ON · CLICK TO LISTEN</span>
@@ -135,21 +134,63 @@
       </div>
       <div class="works__heading" data-reveal>
         <h2 id="worksTitle">Selected<br><em>works</em></h2>
-        <p>从 0 号动态影像开始，按照文件目录顺序展示 1—5 号项目；每组素材按 a、b、c… 依次展开。</p>
+        <p><br></p>
       </div>
 
       <div class="project-list">
-        <article class="project-entry" id="work-1" data-reveal>
-          <button class="project-entry__visual tilt-card" type="button" data-project="yi" aria-label="查看彝族非遗文化可视化项目">
-            <img src="assets/project-yi.webp" alt="彝族非遗文化基因活化图鉴设计" loading="lazy">
-            <span class="project-entry__stamp">01</span><span class="project-entry__view">VIEW A—F ↗</span>
-          </button>
-          <div class="project-entry__copy">
-            <div class="project-entry__meta"><span>01 / 05</span><span>VISUAL / CULTURE / A—F</span></div>
-            <h3>Yi Chronicle</h3>
-            <p class="project-entry__zh">彝族非遗文化基因活化图鉴</p>
-            <p class="project-entry__desc">从信息可视化长图到封面和两条文化影像，按 a—f 的源文件顺序完整呈现。</p>
-            <button class="project-entry__button" type="button" data-project="yi">OPEN CASE STUDY <i>↗</i></button>
+        <article class="project-entry product-boards" id="work-1" data-reveal data-board-stage>
+          <div class="product-boards__header">
+            <div class="product-boards__eyebrow">
+              <span>[ 作品 / SELECTED BOARDS ]</span>
+              <span>01 · 2024—2026</span>
+            </div>
+            <div class="product-boards__heading">
+              <p class="product-boards__intro">六组智能产品设计，从海洋工程、生态治理到文化保护与包容设计。</p>
+              <h3 class="product-boards__title"><span>展板设计</span><em><br></em></h3>
+              <p class="product-boards__note">MOVE THROUGH THE BOARD WALL<br>按 A—F 顺序移动光标 / 点击查看原比例完整素材</p>
+            </div>
+            <button class="product-boards__all" type="button" data-project="five"><span>VIEW ALL</span><strong>17 IMAGES</strong><i>↗</i></button>
+          </div>
+
+          <div class="product-boards__viewport">
+            <div class="product-boards__axis" aria-hidden="true"><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span></div>
+            <div class="product-boards__track" id="productBoardsTrack">
+              <button class="board-gallery__item" type="button" data-project="hull" style="--i:0;--w:calc(22vw - 16px);--r:1555 / 2200;--offset-y:-18px" aria-label="查看 A 船体锈蚀切割一体机">
+                <span class="board-gallery__number">A</span>
+                <span class="board-gallery__media"><img src="library/boards-a-01.webp" alt="船体锈蚀切割一体机展板" loading="lazy" decoding="async"></span>
+                <span class="board-gallery__meta"><strong>HULL LAB</strong><em>船体锈蚀切割一体机</em><i>↗</i></span>
+              </button>
+              <button class="board-gallery__item" type="button" data-project="pure" style="--i:1;--w:calc(15.5vw - 11px);--r:1556 / 2200;--offset-y:34px" aria-label="查看 B PURE 河道清淤装备">
+                <span class="board-gallery__number">B</span>
+                <span class="board-gallery__media"><img src="library/boards-b-01.webp" alt="PURE 河道清淤装备展板" loading="lazy" decoding="async"></span>
+                <span class="board-gallery__meta"><strong>PURE RIVER</strong><em>PURE 河道清淤装备</em><i>↗</i></span>
+              </button>
+              <button class="board-gallery__item" type="button" data-project="heritage" style="--i:2;--w:calc(11vw - 8px);--r:1280 / 1811;--offset-y:-8px" aria-label="查看 C 古建筑修复机器人">
+                <span class="board-gallery__number">C</span>
+                <span class="board-gallery__media"><img src="library/boards-c-01.webp" alt="古建筑修复机器人展板" loading="lazy" decoding="async"></span>
+                <span class="board-gallery__meta"><strong>HERITAGE</strong><em>古建筑修复机器人</em><i>↗</i></span>
+              </button>
+              <button class="board-gallery__item" type="button" data-project="agri" style="--i:3;--w:calc(19vw - 14px);--r:1280 / 1811;--offset-y:48px" aria-label="查看 D 农作专家机器人">
+                <span class="board-gallery__number">D</span>
+                <span class="board-gallery__media"><img src="library/boards-d-01.webp" alt="农作专家机器人展板" loading="lazy" decoding="async"></span>
+                <span class="board-gallery__meta"><strong>AGRI EXPERT</strong><em>农作专家机器人</em><i>↗</i></span>
+              </button>
+              <button class="board-gallery__item" type="button" data-project="mine" style="--i:4;--w:calc(14vw - 10px);--r:1556 / 2200;--offset-y:8px" aria-label="查看 E 矿用应急搜救与排水一体化机器">
+                <span class="board-gallery__number">E</span>
+                <span class="board-gallery__media"><img src="library/boards-e-01.webp" alt="矿用应急搜救与排水一体化机器展板" loading="lazy" decoding="async"></span>
+                <span class="board-gallery__meta"><strong>DEEP RESCUE</strong><em>矿用应急搜救与排水机器</em><i>↗</i></span>
+              </button>
+              <button class="board-gallery__item" type="button" data-project="care" style="--i:5;--w:calc(10vw - 7px);--r:1280 / 1811;--offset-y:62px" aria-label="查看 F 适老助餐辅具">
+                <span class="board-gallery__number">F</span>
+                <span class="board-gallery__media"><img src="library/boards-f-01.webp" alt="适老助餐辅具展板" loading="lazy" decoding="async"></span>
+                <span class="board-gallery__meta"><strong>CARE ASSIST</strong><em>适老助餐辅具</em><i>↗</i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product-boards__footer">
+            <span>CURSOR / PARALLAX / BOARD WALL</span>
+            <span>17 ORIGINAL RATIO PAGES · CLICK TO OPEN</span>
           </div>
         </article>
 
@@ -160,9 +201,9 @@
           </button>
           <div class="project-entry__copy">
             <div class="project-entry__meta"><span>02 / 05</span><span>HMI / UX / UI / A—B</span></div>
-            <h3>Intelligent Cockpit</h3>
+            <h3>汽车HMI设计</h3>
             <p class="project-entry__zh">比亚迪智能座舱 HMI 体验设计</p>
-            <p class="project-entry__desc">先是 HMI 动态演示，再进入完整设计提案，以驾驶场景串联信息层级与交互节奏。</p>
+            <p class="project-entry__desc">先是完整设计提案，再进入 HMI 动态演示，以驾驶场景串联信息层级与交互节奏。</p>
             <button class="project-entry__button" type="button" data-project="byd">OPEN CASE STUDY <i>↗</i></button>
           </div>
         </article>
@@ -174,9 +215,9 @@
           </button>
           <div class="project-entry__copy">
             <div class="project-entry__meta"><span>03 / 05</span><span>SERVICE / MOBILE UX / A—B</span></div>
-            <h3>MediFlow</h3>
+            <h3>陪诊宝UI设计</h3>
             <p class="project-entry__zh">预约挂号 App 用户体验设计</p>
-            <p class="project-entry__desc">先播放交互短片，再以完整长图展示预约、挂号与就诊提醒的用户体验推导。</p>
+            <p class="project-entry__desc">先完整长图展示预约、挂号与就诊提醒的用户体验推导。再播放交互短片。</p>
             <button class="project-entry__button" type="button" data-project="mediflow">OPEN CASE STUDY <i>↗</i></button>
           </div>
         </article>
@@ -195,24 +236,17 @@
           </div>
         </article>
 
-        <article class="project-entry project-entry--five" id="work-5" data-reveal>
-          <button class="project-entry__visual tilt-card" type="button" data-project="five" aria-label="查看产品设计展板合集">
-            <img src="assets/project-five.webp" alt="产品设计展板 a 到 f 六组项目总览" loading="lazy">
+        <article class="project-entry" id="work-5" data-reveal>
+          <button class="project-entry__visual tilt-card" type="button" data-project="yi" aria-label="查看彝族非遗文化可视化项目">
+            <img src="library/yi-fire-festival-cover.webp" alt="彝族非遗文化基因活化图鉴设计" loading="lazy">
             <span class="project-entry__stamp">05</span><span class="project-entry__view">VIEW A—F ↗</span>
           </button>
           <div class="project-entry__copy">
-            <div class="project-entry__meta"><span>05 / 05</span><span>PRODUCT DESIGN / A—F</span></div>
-            <h3>Product Boards</h3>
-            <p class="project-entry__zh">智能产品设计展板合集</p>
-            <p class="project-entry__desc">六组产品方向，覆盖海洋工程、生态环境、文化遗产、应急救援、农业机器人与适老设计。</p>
-            <div class="board-index" aria-label="产品设计展板 a 到 f">
-              <button type="button" class="tilt-card" data-project="hull"><span>A</span><img src="assets/project-hull.webp" alt=""><strong>Hull Lab</strong></button>
-              <button type="button" class="tilt-card" data-project="pure"><span>B</span><img src="assets/project-pure.webp" alt=""><strong>Pure River</strong></button>
-              <button type="button" class="tilt-card" data-project="heritage"><span>C</span><img src="assets/project-heritage.webp" alt=""><strong>Heritage</strong></button>
-              <button type="button" class="tilt-card" data-project="mine"><span>D</span><img src="assets/project-mine.webp" alt=""><strong>Deep Rescue</strong></button>
-              <button type="button" class="tilt-card" data-project="agri"><span>E</span><img src="assets/project-agri.webp" alt=""><strong>Agri Expert</strong></button>
-              <button type="button" class="tilt-card" data-project="care"><span>F</span><img src="assets/project-care.webp" alt=""><strong>Care Assist</strong></button>
-            </div>
+            <div class="project-entry__meta"><span>05 / 05</span><span>VISUAL / CULTURE / A—F</span></div>
+            <h3>彝族非遗</h3>
+            <p class="project-entry__zh">彝族非遗文化基因活化图鉴</p>
+            <p class="project-entry__desc">从信息可视化长图到文化影像。</p>
+            <button class="project-entry__button" type="button" data-project="yi">OPEN CASE STUDY <i>↗</i></button>
           </div>
         </article>
       </div>
@@ -233,7 +267,7 @@
           <em>Desirable</em> by design.
         </h2>
         <div class="statement__aside" data-reveal>
-          <p>从智能硬件、数字界面到文化信息可视化，我持续探索“功能”与“感受”之间的平衡，让产品不仅解决问题，也建立清晰的品牌记忆。</p>
+          <p><br></p>
           <a class="text-link" href="#resume"><span>SEE CAPABILITIES</span><i>↘</i></a>
         </div>
       </div>
@@ -261,62 +295,81 @@
       </div>
       <div class="resume__heading" data-reveal>
         <h2 id="resumeTitle">Learning<br><em>by doing.</em></h2>
-        <p>简历内容已直接转为网页文字，不使用 Word 文件展示。奖状默认收起，点击条目后再打开高清原图。</p>
+        <p><br></p>
       </div>
 
-      <div class="resume__body">
-        <article class="resume-card tilt-card" data-reveal>
-          <div class="resume-card__top"><span>ZI / PROFILE 2026</span><span>RESUME / A</span></div>
-          <div class="resume-profile-head">
-            <div><strong>李子琪</strong><span>产品设计 · 本科</span></div>
-            <em>重庆邮电大学 2024 级</em>
+      <div class="resume__body resume-intro">
+        <aside class="resume-intro__profile" data-reveal>
+          <div class="resume-intro__eyebrow">[ PERSONAL PROFILE / 2026 ]</div>
+          <h3>Who <em>I am</em></h3>
+          <p class="resume-intro__quote">
+            <span>从智能硬件、数字界面到文化信息可视化，</span>
+            <span>我持续探索“功能”与“感受”之间的平衡，</span>
+            <span>让产品不仅解决问题，也建立清晰的品牌记忆。</span>
+          </p>
+          <div class="resume-intro__meta">
+            <span>李子琪</span>
+            <span>重庆邮电大学 · 产品设计</span>
+            <span>2024 级 · 传媒艺术学院</span>
           </div>
-          <div class="resume-profile-meta">
-            <span>女</span><span>传媒艺术学院</span><span>学号 2024214096</span><span>电话 16623603119</span><span>2681073207@qq.com</span>
+          <div class="resume-intro__contact">
+            <span>16623603119</span><span>2681073207@qq.com</span>
           </div>
-          <div class="resume-sections">
-            <section>
-              <h3>教育经历</h3>
-              <div class="resume-row"><span>2024.09—至今</span><div><strong>重庆邮电大学 · 产品设计</strong><p>AIGC 人工智能、用户体验与交互设计、信息可视化、三维辅助软件、设计史、手绘技法</p></div></div>
-              <div class="resume-row"><span>学业成绩</span><div><strong>专业 rank 6 / 77</strong><p>已通过大学英语四级</p></div></div>
-            </section>
-            <section>
-              <h3>活动实践</h3>
-              <div class="resume-row"><span>2024.09—2026.06</span><div><strong>院学生会新媒体中心部长</strong><p>参与制作 60 余篇公众号推文，负责新闻稿撰写，策划并组织开展院校级活动。</p></div></div>
-              <div class="resume-row"><span>2026.01—至今</span><div><strong>“邮渝古成”支教团活动部部长</strong><p>负责活动统筹与海报、PPT 制作。</p></div></div>
-              <div class="resume-row"><span>实践经历</span><div><strong>空间通信研究院志愿者工作部宣传部部长</strong><p>负责新媒体平台账号管理与宣传内容策划。</p></div></div>
-            </section>
-          </div>
-          <div class="resume-card__footer"><span>VOLUNTEER 361 HOURS</span><span>CN / EN</span></div>
-        </article>
+          <figure class="resume-intro__portrait">
+            <img src="library/profile-photo.webp" alt="李子琪证件照" loading="lazy">
+          </figure>
+        </aside>
 
-        <div class="capabilities tilt-card" data-reveal>
-          <p class="micro-copy">HONORS SUMMARY</p>
-          <ol>
-            <li><span>01</span><strong>17 National Awards</strong><p>未来设计师国家二等奖等国家级奖项。</p></li>
-            <li><span>02</span><strong>11 Provincial Awards</strong><p>中国好创意重庆赛区一等奖等省市级奖项。</p></li>
-            <li><span>03</span><strong>Academic Honor</strong><p>校级优秀学生干部、学业奖学金。</p></li>
-            <li><span>04</span><strong>Community Service</strong><p>累计志愿时长 361 小时。</p></li>
-          </ol>
-          <div class="capability-tags">
-            <span>PRODUCT DESIGN</span><span>UX / UI</span><span>AIGC</span><span>VISUALIZATION</span><span>MOTION</span>
-          </div>
+        <div class="resume-intro__content">
+          <article class="resume-scroll-block" data-reveal data-resume-block>
+            <header class="resume-scroll-block__head">
+              <span>01</span><h4>教育经历</h4><em>EXPERIENCES</em>
+            </header>
+            <div class="resume-scroll-block__list">
+              <div class="resume-scroll-item"><span>(01)</span><div><strong>重庆邮电大学 · 产品设计</strong><p>2024.09—至今</p></div></div>
+              <div class="resume-scroll-item"><span>(02)</span><div><strong>主修课程</strong><p>AIGC 人工智能、用户体验与交互设计、信息可视化、三维辅助软件、设计史、手绘技法</p></div></div>
+              <div class="resume-scroll-item"><span>(03)</span><div><strong>学业成绩</strong><p>专业 rank前8% · 已通过大学英语四级</p></div></div>
+            </div>
+          </article>
+
+          <article class="resume-scroll-block" data-reveal data-resume-block>
+            <header class="resume-scroll-block__head">
+              <span>02</span><h4>活动实践</h4><em>PRACTICE</em>
+            </header>
+            <div class="resume-scroll-block__list">
+              <div class="resume-scroll-item"><span>(01)</span><div><strong>院学生会新媒体中心部长</strong><p>2024.09—2026.06 · 参与制作 60 余篇公众号推文，负责新闻稿撰写并组织院校级活动。</p></div></div>
+              <div class="resume-scroll-item"><span>(02)</span><div><strong>“邮渝古成”支教团活动部部长</strong><p>2026.01—至今 · 负责活动统筹与海报、PPT 制作。</p></div></div>
+              <div class="resume-scroll-item"><span>(03)</span><div><strong>空间通信研究院志愿者工作部宣传部部长</strong><p>负责新媒体平台账号管理与宣传内容策划。</p></div></div>
+            </div>
+          </article>
+
+          <article class="resume-scroll-block" data-reveal data-resume-block>
+            <header class="resume-scroll-block__head">
+              <span>03</span><h4>获奖情况</h4><em>HONOUR</em>
+            </header>
+            <div class="resume-scroll-block__list">
+              <div class="resume-scroll-item"><span>(01)</span><div><strong>17 项国家级奖项</strong><p>未来设计师国家二等奖等国家级奖项。</p></div></div>
+              <div class="resume-scroll-item"><span>(02)</span><div><strong>11 项省市级奖项</strong><p>中国好创意重庆赛区一等奖等省市级奖项。</p></div></div>
+              <div class="resume-scroll-item"><span>(03)</span><div><strong>校级荣誉</strong><p>优秀学生干部、学业奖学金 · 志愿时长 361 小时。</p></div></div>
+            </div>
+          </article>
         </div>
       </div>
 
       <section class="honors" id="honors" aria-labelledby="honorsTitle">
         <div class="honors__head" data-reveal>
           <div><span>[ 08 / HONORS ]</span><h3 id="honorsTitle">Awards / Archive</h3></div>
-          <p>共 20 张奖状。这里只展示一个精选入口，点击图片或下方标题查看高清原图。</p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;部分获奖奖状</p>
         </div>
-        <div class="honors__layout">
-          <button class="honor-feature tilt-card" type="button" data-honor="16" data-reveal aria-label="查看未来设计国2奖状">
-            <img src="library/honor-17.webp" alt="未来设计国2奖状" loading="lazy">
-            <span><em>FEATURED HONOR</em><strong>点击查看高清奖状</strong></span>
-          </button>
-          <div class="honor-list" data-reveal>
-            <p class="micro-copy">20 CERTIFICATES / CLICK TO VIEW</p>
-            <div class="honor-list__grid" id="honorList"></div>
+        <div class="honors__layout honors__layout--flow">
+          <div class="honor-flow" id="honorFlow" data-reveal>
+            <div class="honor-flow__stage" id="honorFlowStage"></div>
+            <div class="honor-flow__hud">
+              <span><b id="honorFlowCurrent">10</b> / <span id="honorFlowTotal">12</span></span>
+              <span>MOVE TO EXPLORE · CLICK TO OPEN</span>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
       </section>
@@ -383,5 +436,20 @@
       </div>
     </div>
   </dialog>
+  <aside class="copy-editor" id="copyEditor" aria-label="网页文字编辑">
+    <button class="copy-editor__launch" id="copyEditorLaunch" type="button"><span>✎</span>直接编辑文字</button>
+    <div class="copy-editor__panel" id="copyEditorPanel" hidden>
+      <div class="copy-editor__head">
+        <strong>文字编辑模式</strong>
+        <span id="copyEditorStatus">自动保存到本机</span>
+      </div>
+      <p>点击右侧页面中的标题、介绍或简历文字直接修改。</p>
+      <div class="copy-editor__actions">
+        <button type="button" id="copyEditorDone">完成</button>
+        <button type="button" id="copyEditorExport">导出改动</button>
+        <button type="button" id="copyEditorReset">恢复原文</button>
+      </div>
+    </div>
+  </aside>
 </body>
 </html>

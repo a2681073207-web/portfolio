@@ -1,0 +1,218 @@
+{
+  "hero-mine.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 197548,
+    "source_index": 9
+  },
+  "hero-pure.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 126068,
+    "source_index": 2
+  },
+  "hero-hmi.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 29790,
+    "source_index": 23
+  },
+  "hero-yi.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 199506,
+    "source_index": 30
+  },
+  "hero-heritage.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 191424,
+    "source_index": 6
+  },
+  "hero-agri.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 231682,
+    "source_index": 12
+  },
+  "hero-care.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 111740,
+    "source_index": 15
+  },
+  "hero-hull.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 211144,
+    "source_index": 0
+  },
+  "hero-grain.webp": {
+    "size": [
+      760,
+      1040
+    ],
+    "bytes": 212692,
+    "source_index": 18
+  },
+  "project-byd.webp": {
+    "size": [
+      1800,
+      1125
+    ],
+    "bytes": 73144,
+    "source_index": 23,
+    "tag": "HMI / AUTOMOTIVE"
+  },
+  "project-mine.webp": {
+    "size": [
+      1500,
+      1125
+    ],
+    "bytes": 303328,
+    "source_index": 9,
+    "tag": "PRODUCT / EMERGENCY"
+  },
+  "project-pure.webp": {
+    "size": [
+      1500,
+      1875
+    ],
+    "bytes": 297070,
+    "source_index": 2,
+    "tag": "PRODUCT / ENVIRONMENT"
+  },
+  "project-heritage.webp": {
+    "size": [
+      1500,
+      1875
+    ],
+    "bytes": 524598,
+    "source_index": 6,
+    "tag": "ROBOTICS / CULTURE"
+  },
+  "project-agri.webp": {
+    "size": [
+      1500,
+      1875
+    ],
+    "bytes": 663904,
+    "source_index": 12,
+    "tag": "ROBOTICS / AGRICULTURE"
+  },
+  "project-yi.webp": {
+    "size": [
+      1800,
+      1200
+    ],
+    "bytes": 466366,
+    "source_index": 30,
+    "tag": "VISUAL / CULTURE"
+  },
+  "project-care.webp": {
+    "size": [
+      1500,
+      1875
+    ],
+    "bytes": 250728,
+    "source_index": 15,
+    "tag": "INCLUSIVE / PRODUCT"
+  },
+  "project-hull.webp": {
+    "size": [
+      1500,
+      1875
+    ],
+    "bytes": 575152,
+    "source_index": 0,
+    "tag": "ROBOTICS / MARINE"
+  },
+  "project-grain.webp": {
+    "size": [
+      1500,
+      1875
+    ],
+    "bytes": 625418,
+    "source_index": 18,
+    "tag": "AI / DETECTION"
+  },
+  "project-mediflow.webp": {
+    "size": [
+      1800,
+      1125
+    ],
+    "bytes": 122740,
+    "source_index": 34,
+    "tag": "UX / HEALTHCARE"
+  },
+  "support-hmi.webp": {
+    "size": [
+      1900,
+      1100
+    ],
+    "bytes": 79764,
+    "source_index": 24,
+    "support": true
+  },
+  "support-yi.webp": {
+    "size": [
+      1900,
+      1100
+    ],
+    "bytes": 346528,
+    "source_index": 31,
+    "support": true
+  },
+  "support-shield.webp": {
+    "size": [
+      1200,
+      1500
+    ],
+    "bytes": 270572,
+    "source_index": 5,
+    "support": true
+  },
+  "support-agri-detail.webp": {
+    "size": [
+      1200,
+      1500
+    ],
+    "bytes": 566066,
+    "source_index": 13,
+    "support": true
+  },
+  "motion-app.webp": {
+    "size": [
+      900,
+      570
+    ],
+    "bytes": 653278,
+    "source_index": 20,
+    "animated": true
+  },
+  "motion-center.webp": {
+    "size": [
+      1100,
+      622
+    ],
+    "bytes": 342090,
+    "source_index": 25,
+    "animated": true
+  }
+}
