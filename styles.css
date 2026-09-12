@@ -2937,3 +2937,370 @@ body.copy-editing [contenteditable="true"]:focus { outline-style: solid; outline
   cursor: ew-resize;
   touch-action: none;
 }
+
+/* Mobile portrait refinement — desktop layout remains unchanged */
+@media (max-width: 760px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  .site-header {
+    background: rgba(245, 241, 233, 0.88);
+    backdrop-filter: blur(18px);
+  }
+
+  .copy-editor {
+    display: none;
+  }
+
+  /* Keep Showreel horizontal and letterbox it inside the portrait page */
+  .showreel {
+    height: 180svh;
+    min-height: 1280px;
+  }
+
+  .showreel__sticky {
+    min-height: 100svh;
+  }
+
+  .showreel__frame {
+    left: 12px;
+    right: 12px;
+    top: 50%;
+    bottom: auto;
+    width: auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    transform: translate3d(0, -50%, 0) scale(var(--reel-scale));
+    transform-origin: center;
+  }
+
+  .showreel__video {
+    object-fit: contain;
+    background: #000;
+  }
+
+  .showreel__topline {
+    left: 12px;
+    right: 12px;
+    top: 10px;
+  }
+
+  .showreel__title {
+    font-size: clamp(36px, 11vw, 52px);
+    letter-spacing: -0.06em;
+    transform: translate3d(-50%, -50%, 0) !important;
+  }
+
+  .showreel__controls {
+    left: 12px;
+    right: 12px;
+    bottom: 10px;
+  }
+
+  .reel-toggle {
+    gap: 6px;
+    padding: 7px 8px;
+    background: rgba(0, 0, 0, 0.36);
+  }
+
+  .reel-time {
+    font-size: 8px;
+  }
+
+  .reel-progress {
+    height: 12px;
+  }
+
+  .showreel__footer {
+    bottom: 16px;
+  }
+
+  /* Product boards become a natural touch carousel instead of a clipped wall */
+  .product-boards {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .product-boards__header {
+    padding: 16px 18px 0;
+  }
+
+  .product-boards__eyebrow {
+    font-size: 8px;
+  }
+
+  .product-boards__heading {
+    display: block;
+    padding-top: 18px;
+  }
+
+  .product-boards__title {
+    justify-content: flex-start;
+    font-size: clamp(62px, 19vw, 84px);
+  }
+
+  .product-boards__intro {
+    max-width: 34ch;
+    margin-top: 14px;
+    font-size: 11px;
+  }
+
+  .product-boards__all {
+    top: 48px;
+    right: 18px;
+    padding: 8px 9px;
+  }
+
+  .product-boards__viewport {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    margin-top: 8px;
+    padding: 26px 18px 72px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    perspective: none;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+
+  .product-boards__viewport::-webkit-scrollbar,
+  .honor-flow__stage::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-boards__track {
+    position: relative;
+    left: 0;
+    top: auto;
+    width: max-content;
+    height: auto;
+    gap: 12px;
+    padding-right: 18px;
+    transform: none !important;
+    transition: none;
+    will-change: auto;
+  }
+
+  .board-gallery__item,
+  .board-gallery__item:nth-child(n) {
+    flex: 0 0 min(78vw, 340px) !important;
+    width: min(78vw, 340px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    opacity: 1 !important;
+    clip-path: none !important;
+    transform: none !important;
+    animation: none !important;
+    scroll-snap-align: center;
+    cursor: pointer;
+  }
+
+  .board-gallery__media {
+    inset: 0;
+  }
+
+  .product-boards__footer {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    padding: 0 18px 18px;
+  }
+
+  .product-boards__footer span:first-child {
+    display: none;
+  }
+
+  .project-list {
+    gap: 48px;
+  }
+
+  .project-entry__visual {
+    min-height: 0;
+  }
+
+  .project-entry__visual img {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .project-entry__copy,
+  .project-entry:nth-child(even) .project-entry__copy {
+    padding: 28px 0 42px;
+    border: 0;
+    background: transparent;
+  }
+
+  .project-entry__meta {
+    margin-bottom: 24px;
+  }
+
+  .project-entry__copy h3 {
+    font-size: clamp(42px, 14vw, 60px);
+  }
+
+  .statement {
+    padding-top: 92px;
+  }
+
+  .statement__layout {
+    gap: 30px;
+    padding: 54px 0 92px;
+  }
+
+  .statement__headline {
+    font-size: clamp(42px, 14vw, 60px);
+    line-height: 0.86;
+  }
+
+  .statement__aside {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-top: 0;
+  }
+
+  /* Reserve the portrait ratio before the lazy image arrives */
+  .resume-intro__portrait {
+    width: min(100%, 300px);
+    aspect-ratio: 1 / 1;
+    margin-top: 28px;
+  }
+
+  .resume-intro__portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .resume-intro__profile h3 {
+    margin-top: 34px;
+    font-size: clamp(64px, 22vw, 92px);
+  }
+
+  .resume-intro__quote {
+    margin-top: 28px;
+  }
+
+  .resume-scroll-block {
+    padding: 28px 0 14px;
+  }
+
+  .resume-scroll-item {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 14px;
+    padding: 18px 0;
+  }
+
+  .resume-scroll-item strong {
+    font-size: clamp(18px, 5.4vw, 23px);
+  }
+
+  .honors__head {
+    gap: 20px;
+    padding-bottom: 28px;
+  }
+
+  .honors__head h3 {
+    font-size: clamp(42px, 12vw, 56px);
+    line-height: 0.88;
+  }
+
+  /* Awards use a swipeable, natural-ratio gallery on phones */
+  .honor-flow {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    perspective: none;
+    touch-action: pan-x;
+  }
+
+  .honor-flow::before {
+    display: none;
+  }
+
+  .honor-flow__stage {
+    position: relative;
+    inset: auto;
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    padding: 24px 18px 26px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transform-style: flat;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+
+  .honor-flow-card,
+  .honor-flow-card:nth-child(n) {
+    position: relative;
+    left: auto;
+    top: auto;
+    flex: 0 0 min(82vw, 340px);
+    width: min(82vw, 340px) !important;
+    height: auto !important;
+    min-height: 0;
+    opacity: 1 !important;
+    z-index: auto !important;
+    transform: none !important;
+    filter: none !important;
+    pointer-events: auto !important;
+    scroll-snap-align: center;
+    cursor: pointer;
+  }
+
+  .honor-flow-card.is-folded {
+    pointer-events: auto !important;
+  }
+
+  .honor-flow-card__image {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: var(--art-ratio, 4 / 3);
+  }
+
+  .honor-flow-card__caption {
+    height: auto;
+    min-height: 48px;
+    padding: 10px 4px 0;
+  }
+
+  .honor-flow__hud {
+    position: static;
+    margin-top: 12px;
+    padding: 0 18px 18px;
+  }
+
+  .honor-dialog__stage {
+    padding: 16px 46px;
+  }
+
+  .project-dialog__gallery video {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #000;
+  }
+
+  .project-dialog__gallery img {
+    min-height: 0;
+    max-height: none;
+    height: auto;
+    object-fit: contain;
+  }
+}
