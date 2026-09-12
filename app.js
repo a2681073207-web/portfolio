@@ -1002,7 +1002,7 @@ const honors = [
     reelFrame.style.setProperty("--reel-x", `${Math.round((0.5 - progress) * 150)}px`);
     if (reelProgress) reelProgress.style.width = `${(progress * 100).toFixed(2)}%`;
 
-    const duration = Number.isFinite(showreelVideo.duration) ? showreelVideo.duration : 30;
+    const duration = Number.isFinite(showreelVideo.duration) ? showreelVideo.duration : 22.69;
     if (reelTime) reelTime.textContent = `${formatReelTime(progress * duration)} / ${formatReelTime(duration)}`;
 
     if (reelScrollMode && showreelVideo.readyState >= 1) {
@@ -1040,11 +1040,11 @@ const honors = [
       } catch (error) {
         reelScrollMode = true;
         reelToggle.classList.remove("is-live");
-        if (label) label.textContent = "SCROLL TO PLAY";
+        if (label) label.textContent = "PLAY WITH SOUND";
       }
     } else {
       showreelVideo.pause();
-      if (label) label.textContent = "SCROLL TO PLAY";
+      if (label) label.textContent = "PLAY WITH SOUND";
       syncReel();
     }
   });
