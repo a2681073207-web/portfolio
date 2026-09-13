@@ -3304,3 +3304,62 @@ body.copy-editing [contenteditable="true"]:focus { outline-style: solid; outline
     object-fit: contain;
   }
 }
+
+/* Cursor-driven orange aura replaces the opening image planes */
+.hero::before {
+  opacity: 0.24;
+}
+
+.hero__aura {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: clamp(260px, 39vw, 590px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.78;
+  background:
+    radial-gradient(circle at 42% 42%, rgba(255, 133, 38, 0.58) 0%, rgba(255, 111, 23, 0.34) 24%, rgba(255, 166, 77, 0.15) 48%, transparent 72%);
+  box-shadow: 0 0 100px rgba(255, 116, 24, 0.16);
+  filter: blur(30px) saturate(1.18);
+  mix-blend-mode: multiply;
+  transform: translate3d(var(--aura-x, 72vw), var(--aura-y, 30vh), 0) translate(-50%, -50%);
+  transition: transform 0.42s cubic-bezier(0.2, 0.78, 0.2, 1), opacity 0.5s ease;
+  will-change: transform;
+}
+
+.hero__aura::after {
+  content: "";
+  position: absolute;
+  inset: 29%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 174, 74, 0.32), rgba(255, 113, 18, 0.08) 48%, transparent 72%);
+  filter: blur(12px);
+  animation: heroAuraPulse 3.8s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes heroAuraPulse {
+  0%, 100% { opacity: 0.58; transform: scale(0.94); }
+  50% { opacity: 0.92; transform: scale(1.08); }
+}
+
+@media (pointer: coarse) {
+  .hero__aura {
+    --aura-x: 72%;
+    --aura-y: 30%;
+    width: min(82vw, 460px);
+    opacity: 0.64;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__aura,
+  .hero__aura::after {
+    animation: none;
+    transition: none;
+  }
+}

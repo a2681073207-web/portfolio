@@ -64,18 +64,13 @@
   }
 
   const hero = document.querySelector(".hero");
-  const stage = document.getElementById("pointerStage");
+  const stage = null;
   const pointerHint = document.getElementById("pointerHint");
+  const heroAura = document.getElementById("heroAura");
   const cursor = document.getElementById("cursor");
   const cursorLabel = cursor?.querySelector(".cursor__label");
-  const heroImages = [
-    "assets/opening-latest-01.webp",
-    "assets/opening-latest-02.webp",
-    "assets/opening-latest-03.webp",
-    "assets/opening-latest-04.webp",
-    "assets/opening-latest-05.webp",
-    "assets/opening-latest-06.webp"
-  ];
+  const heroImages = [];
+
 
   heroImages.forEach((src) => {
     const image = new Image();
@@ -92,6 +87,8 @@
   const planes = [];
   const cursorState = { x: window.innerWidth / 2, y: window.innerHeight / 2, currentX: window.innerWidth / 2, currentY: window.innerHeight / 2 };
   const pointer = { x: window.innerWidth * 0.55, y: window.innerHeight * 0.47 };
+  heroAura?.style.setProperty("--aura-x", `${pointer.x}px`);
+  heroAura?.style.setProperty("--aura-y", `${pointer.y}px`);
 
   if ("IntersectionObserver" in window && hero) {
     const heroObserver = new IntersectionObserver(([entry]) => {
@@ -105,6 +102,8 @@
     const rect = hero.getBoundingClientRect();
     pointer.x = clientX - rect.left;
     pointer.y = clientY - rect.top;
+    heroAura?.style.setProperty("--aura-x", `${pointer.x}px`);
+    heroAura?.style.setProperty("--aura-y", `${pointer.y}px`);
     cursorState.x = clientX;
     cursorState.y = clientY;
   };
@@ -940,6 +939,8 @@ const honors = [
     if (!hero) return;
     pointer.x = clamp(pointer.x, 0, hero.clientWidth);
     pointer.y = clamp(pointer.y, 0, hero.clientHeight);
+    heroAura?.style.setProperty("--aura-x", `${pointer.x}px`);
+    heroAura?.style.setProperty("--aura-y", `${pointer.y}px`);
   });
   const copyEditorLaunch = document.getElementById("copyEditorLaunch");
   const copyEditorPanel = document.getElementById("copyEditorPanel");
